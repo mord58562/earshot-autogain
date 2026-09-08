@@ -5,9 +5,9 @@ A peak follower with a long release steers the level toward a target at
 0.2 dB/s downward and 0.02 dB/s upward, with a 5 ms look-ahead brickwall
 limiter behind it as the backstop.
 
-It is the auto-preamp from [Earshot](https://github.com/mord58562/earshot)
-lifted out of the menubar app and rebuilt as a plug-in, with the EQ removed
-and the limiter, multichannel support and full parameter automation added.
+It began as the auto-preamp stage of Earshot, a menubar parametric EQ, lifted
+out of that app and rebuilt as a plug-in with the EQ removed and the limiter,
+multichannel support and full parameter automation added.
 
 Requires Apple Silicon and macOS 13 or later. No Xcode project, no package
 manager, no dependencies beyond the Xcode Command Line Tools.
@@ -76,7 +76,7 @@ All twelve are automatable and rampable.
 
 ### Why the rates are asymmetric
 
-Earshot moved gain at one rate in both directions. That is defensible when
+The original moved gain at one rate in both directions. That is defensible when
 gain is hard-capped at unity, but not on music: a quiet passage lasting a
 minute recovers a full 12 dB at 0.2 dB/s, and although no individual moment is
 perceptible, the arrival is. Downward movement is protection and needs to be
@@ -89,7 +89,7 @@ preset.
 
 | Preset | For |
 |---|---|
-| Earshot Classic | Symmetric 0.2 dB/s in both directions, matching the original Earshot auto-preamp |
+| Earshot Classic | Symmetric 0.2 dB/s in both directions, matching the original auto-preamp |
 | Volume Guard | The shipping default. Attenuation only, slow recovery |
 | Source Leveller | Target -6 dB, up to 12 dB of boost, 20 s release. For material with genuinely inconsistent source levels |
 
