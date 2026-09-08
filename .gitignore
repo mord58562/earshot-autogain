@@ -1,0 +1,17 @@
+# Build output
+Earshot AutoGain.app/
+*.appex/
+.build/
+
+# macOS
+.DS_Store
+
+# Swift intermediates
+*.swiftmodule
+*.swiftdoc
+*.swiftsourceinfo
+*.o
+*.dSYM/
+
+# Release staging
+*.zip
